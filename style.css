@@ -1,0 +1,534 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #3A3A3A;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding: 21px 0;
+}
+h3 {
+    font-size: 27px;
+    padding: 10px;
+}
+h4 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3A3A3A;
+    padding-bottom: 64px;
+}
+h5 {
+    padding: 10px 0px;
+    font-size: 22px;
+    font-weight: 500;
+}
+h6 {
+    padding: 5px;
+}
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #3A3A3A;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+strong {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content{
+    width: 90%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.logo{
+    width: 300px;
+    float: left;
+    padding: 10px 0px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+
+#nav-bar{
+    float: right;
+}
+#nav-bar ul li{
+    display: inline-block;
+    padding: 14px 0px;
+}
+#nav-bar ul li a{
+    font-size: 18px;
+    text-align: center;
+    padding: 14px;
+    color: #494949;
+    text-decoration: none;
+}
+
+#nav-bar ul li a:hover{
+    background-color: #007ACC;
+    color: #FFFFFF;
+}
+
+.infulancer-jurney{
+    display: grid;
+    grid-template-columns: 57% 43%;
+    grid-template-rows: 57% 43%;
+    height: 500px;
+    width: 100%;
+}
+.camera-pic .bg-img{
+    position: absolute;
+}
+.camera-pic .main-img {
+    position: relative;
+    width: 435px;
+    margin-top: 35px;
+}
+
+.infulancer-jurney .text-side {
+    margin-top: 50px;
+}
+button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #E02C6D;
+    color: #fff;
+    cursor: pointer;
+}
+.infulancer-jurney button:hover{
+    background-color: #007ACC;
+}
+
+.brand-img{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* grid-template-rows: repeat(1, 1fr); */
+    align-items: center;
+    justify-items: center;
+    padding: 25px;
+    margin-top: 70px;
+    border-top: 2px solid #F7F0FF;
+    border-bottom: 2px solid #F7F0FF;
+}
+
+section.section-product {
+    margin-top: 100px;
+}
+
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: center;
+    background-color: #F1F1F1;
+}
+.collection-items {
+    width: 364px;
+    height: 490px;
+    padding: 5px;
+    text-align: center;
+    line-height: 1.3rem;
+    background-color: #FFFFFF;
+    border-radius: 05px;
+    box-shadow: 0px 0px 30px 0px #e0e0e0;
+}
+.collection-items figure {
+    margin-top: 25px;
+}
+
+.collection-items figcaption {
+    text-align: left;
+    padding: 25px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.fas{
+    color: #FB8200;
+}
+.see-more{
+    color: #E54E85;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    float: right;
+    padding-top: 30px;
+}
+
+section.last-section {
+    margin-top: 141px;
+}
+
+.futureed-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer{
+    /* width: 100%; */
+    height: 300px;
+    margin-top: 70px;
+    color: #FFFFFF;
+    background-color: #0A0826;
+}
+.main-footer {
+    text-align: center;
+    padding-top: 80px;
+}
+.main-footer a {
+    padding: 10px;
+    line-height: 60px;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+/* Large desktop */
+@media (max-width: 1025px) {
+    .infulancer-jurney {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 05px;
+        
+    }
+    .camera-pic .main-img {
+        width: 382px;
+        height: 393px;
+        margin-top: 46px;
+        margin-left: 26px;
+    }
+    .camera-pic .bg-img {
+        width: 460px;
+    }
+    /* collection */
+    .collection-items {
+        width: 305px;
+        height: 450px;
+    }
+    .collection-items img {
+        width: 248px;
+    }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .logo {
+        width: 250px;
+    }
+    .logo h3 {
+        font-size: 24px;
+        padding: 08px;
+    }
+    #nav-bar ul li a {
+        padding: 08px;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .infulancer-jurney {
+        height: 322px;
+    }
+    
+    p {
+        font-size: 16px;
+        padding: 7px 0px;
+    }
+    button {
+        width: 150px;
+    }
+    .camera-pic .bg-img {
+        width: 330px;
+    }
+    .camera-pic .main-img {
+        width: 270px;
+        height: 294px;
+        margin-top: 21px;
+    }
+    .brand-img {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 38px;
+    }
+    .brand-img img {
+        width: 75px;
+        height: 60px;
+    }
+    section.section-product {
+        margin-top: 55px;
+    }
+    .collection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .futureed-products {
+        column-gap: 40px;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 0px 0;
+    }
+    .futureed-products p {
+        font-size: 14px;
+    }
+    section.last-section {
+        margin-top: 100px;
+    }
+    footer {
+        /* width: 100%; */
+        height: 231px;
+        margin-top: 32px;
+    }
+    .main-footer {
+        padding-top: 40px;
+    }
+        
+    }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .logo {
+        width: 150px;
+    }
+    #nav-bar ul li a {
+        padding: 07px;
+    }
+    h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .infulancer-jurney {
+        height: 322px;
+    }
+    
+    p {
+        font-size: 14px;
+        padding: 7px 0px;
+    }
+    button {
+        width: 130px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .camera-pic .bg-img {
+        width: 318px;
+    }
+    .camera-pic .main-img {
+        width: 259px;
+        height: 269px;
+        margin-top: 30px;
+    }
+    section.brand-logo {
+        margin-top: -20px;
+    }
+    .brand-img {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 38px;
+    }
+    .brand-img img {
+        width: 75px;
+        height: 60px;
+    }
+    section.section-product {
+        margin-top: 35px;
+    }
+    .collection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .futureed-products {
+        column-gap: 30px;
+    }
+    h2 {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 0px 0;
+    }
+    section.last-section {
+        margin-top: 100px;
+    }
+    footer {
+        /* width: 100%; */
+        height: 231px;
+        margin-top: 32px;
+    }
+    .main-footer {
+        padding-top: 40px;
+    }
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 475px) { 
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    #nav-bar ul li a {
+        padding: 20px;
+        line-height: 30px;
+        font-size: 19px;
+    }
+    h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .infulancer-jurney {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .infulancer-jurney .text-side {
+        margin-top: 30px;
+    }
+    .camera-pic {
+        margin-top: 110px;
+    }
+    
+    p {
+        font-size: 14px;
+        padding: 7px 0px;
+    }
+    button {
+        width: 200px;
+        font-size: 18px;
+    }
+    .camera-pic .bg-img {
+        width: 318px;
+    }
+    .camera-pic .main-img {
+        width: 259px;
+        height: 269px;
+        margin-top: 30px;
+    }
+    section.brand-logo {
+        margin-top: 320px;
+    }
+    .brand-img {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+    .brand-img img {
+        width: 103px;
+        height: 69px;
+    }
+    section.section-product {
+        margin-top: 35px;
+    }
+    .collection{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: -25px;
+    }
+    section.last-section {
+        margin-top: 100px;
+    }
+    .futureed-products {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .futureed-products-picture {
+        text-align: center;
+    }
+    .futureed-products img {
+        width: 353px;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 9px 0;
+    }
+    footer {
+        /* width: 100%; */
+        height: 231px;
+        margin-top: 32px;
+    }
+    .main-footer {
+        padding-top: 40px;
+        font-size: 15px;
+    }
+ }
+ @media (max-width: 375px) { 
+    .futureed-products img {
+        width: 250px;
+    }
+    .camera-pic {
+        margin-top: 110px;
+    }
+    .futureed-products-picture {
+        text-align: center;
+    }
+ }
